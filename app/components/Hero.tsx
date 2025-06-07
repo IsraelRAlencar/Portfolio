@@ -1,8 +1,12 @@
 import React from 'react'
 import { Button } from './ui/Button'
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
+import { useSiteInfo } from '../context/SiteInfoContext';
+import Image from 'next/image';
 
 export default function Hero() {
+  const siteInfo = useSiteInfo();
+
   return (
     <section className="pt-32 pb-20 px-4">
       <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
@@ -31,23 +35,30 @@ export default function Hero() {
             </Button>
           </div>
           <div className="flex items-center gap-6">
-            <a href="https://github.com" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href={siteInfo.github} className="text-muted-foreground hover:text-primary transition-colors">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href={siteInfo.linkedin} className="text-muted-foreground hover:text-primary transition-colors">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="mailto:israel@example.com" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href={`mailto:${siteInfo.email}`} className="text-muted-foreground hover:text-primary transition-colors">
               <Mail className="w-6 h-6" />
             </a>
           </div>
         </div>
         <div className="relative">
           <div className="absolute -inset-0.5 bg-primary/20 rounded-2xl blur opacity-30" />
-          <img
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+          {/* <img
+            src="/images/israel-alencar.jpeg"
             alt="Israel Alencar"
             className="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto"
+          /> */}
+          <Image
+            src="/images/israel-alencar.jpeg"
+            alt="Israel Alencar"
+            width={400}
+            height={400}
+            className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
           />
           <div className="absolute -bottom-10 -left-10 bg-card p-6 rounded-xl shadow-xl border border-border">
             <p className="text-primary text-3xl font-bold">5+</p>

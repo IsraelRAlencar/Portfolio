@@ -16,8 +16,8 @@ export default function Projects() {
             "HR management",
             "Reporting system"
         ],
-        githubUrl: "#",
-        liveUrl: "#"
+        githubUrl: "",
+        liveUrl: ""
         },
         {
         title: "E-commerce Microservices Platform",
@@ -31,23 +31,8 @@ export default function Projects() {
             "Inventory management",
             "Admin dashboard"
         ],
-        githubUrl: "#",
-        liveUrl: "#"
-        },
-        {
-        title: "Single Sign On Solution",
-        description: "Centralized authentication system enabling secure access across multiple applications with unified user management.",
-        image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3",
-        technologies: ["C#", "Entity Framework", "Razor Pages", "SQL Server", "OAuth 2.0"],
-        features: [
-            "Centralized authentication",
-            "Multi-application support",
-            "User role management",
-            "Session management",
-            "Security protocols"
-        ],
-        githubUrl: "#",
-        liveUrl: "#"
+        githubUrl: "",
+        liveUrl: ""
         },
         {
         title: "Automatic Payroll System",
@@ -61,9 +46,24 @@ export default function Projects() {
             "Report generation",
             "Employee management"
         ],
-        githubUrl: "#",
-        liveUrl: "#"
-        }
+        githubUrl: "",
+        liveUrl: ""
+        },
+        {
+        title: "Single Sign On Solution",
+        description: "Centralized authentication system enabling secure access across multiple applications with unified user management.",
+        image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3",
+        technologies: ["C#", "Entity Framework", "Razor Pages", "SQL Server", "OAuth 2.0"],
+        features: [
+            "Centralized authentication",
+            "Multi-application support",
+            "User role management",
+            "Session management",
+            "Security protocols"
+        ],
+        githubUrl: "",
+        liveUrl: ""
+        },
     ];
 
   return (
@@ -115,14 +115,18 @@ export default function Projects() {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium">
-                    <Github className="mr-2 h-4 w-4" />
-                    View Code
-                  </Button>
-                  <Button variant="outline" className="border-border text-muted-foreground hover:bg-accent">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
-                  </Button>
+                  {project.githubUrl !== "" && (
+                    <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium">
+                      <Github className="mr-2 h-4 w-4" />
+                      View Code
+                    </Button>
+                  )}
+                  {project.liveUrl !== "" && (
+                    <Button variant="outline" className="border-border text-muted-foreground hover:bg-accent">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Live Demo
+                    </Button>
+                  )}
                 </div>
               </div>
 

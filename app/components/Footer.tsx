@@ -1,7 +1,10 @@
 import React from 'react'
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
+import { useSiteInfo } from '../context/SiteInfoContext';
 
 export default function Footer() {
+  const siteInfo = useSiteInfo();
+
   return (
     <footer className="py-12 px-4 border-t border-border">
       <div className="container mx-auto">
@@ -13,7 +16,7 @@ export default function Footer() {
           
           <div className="flex items-center gap-6">
             <a 
-              href="https://github.com" 
+              href={siteInfo.github}
               className="text-muted-foreground hover:text-primary transition-colors"
               target="_blank"
               rel="noopener noreferrer"
@@ -21,7 +24,7 @@ export default function Footer() {
               <Github className="w-6 h-6" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href={siteInfo.linkedin}
               className="text-muted-foreground hover:text-primary transition-colors"
               target="_blank"
               rel="noopener noreferrer"
@@ -29,7 +32,7 @@ export default function Footer() {
               <Linkedin className="w-6 h-6" />
             </a>
             <a 
-              href="mailto:israel.alencar@example.com" 
+              href={`mailto:${siteInfo.email}`}
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="w-6 h-6" />
@@ -39,7 +42,7 @@ export default function Footer() {
         
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground flex items-center justify-center gap-1">
-            Made with <Heart className="w-4 h-4 text-primary" /> by Israel Alencar &copy; {new Date().getFullYear()}
+            Israel Alencar &copy; {new Date().getFullYear()}
           </p>
         </div>
       </div>

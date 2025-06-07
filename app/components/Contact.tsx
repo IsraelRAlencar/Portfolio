@@ -1,8 +1,11 @@
 import React from 'react'
 import { Button } from './ui/Button'
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { useSiteInfo } from '../context/SiteInfoContext';
 
 export default function Contact() {
+  const siteInfo = useSiteInfo();
+
   return (
     <section className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto">
@@ -31,7 +34,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Email</p>
-                  <p className="text-muted-foreground">israel.alencar@example.com</p>
+                  <p className="text-muted-foreground">{siteInfo.email}</p>
                 </div>
               </div>
 
@@ -41,7 +44,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Phone</p>
-                  <p className="text-muted-foreground">+55 (11) 99999-9999</p>
+                  <p className="text-muted-foreground">{siteInfo.phone}</p>
                 </div>
               </div>
 
@@ -51,7 +54,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Location</p>
-                  <p className="text-muted-foreground">São Paulo, Brazil</p>
+                  <p className="text-muted-foreground">{siteInfo.location}</p>
                 </div>
               </div>
             </div>
