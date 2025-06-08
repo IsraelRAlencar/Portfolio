@@ -40,6 +40,7 @@
       "title": "Featured Projects",
       "subtitle": "Showcasing my expertise in building scalable enterprise applications",
       "technologiesUsed": "Technologies Used",
+      "keyFeatures": "Key Features",
       "details": [
         {
           "title": "Enterprise ERP System",

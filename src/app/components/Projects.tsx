@@ -91,7 +91,7 @@ export default function Projects() {
                 <p className="text-muted-foreground leading-relaxed">{project.description}</p>
                 
                 <div className="space-y-4">
-                  <h4 className="text-lg font-semibold text-primary">Key Features:</h4>
+                  <h4 className="text-lg font-semibold text-primary">{t('keyFeatures')}</h4>
                   <ul className="grid grid-cols-1 gap-2">
                     {project.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center gap-2 text-muted-foreground">

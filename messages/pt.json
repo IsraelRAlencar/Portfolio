@@ -40,6 +40,7 @@
       "title": "Projetos em Destaque",
       "subtitle": "Exibindo minha experiência na construção de aplicações empresariais escaláveis",
       "technologiesUsed": "Tecnologias Utilizadas",
+      "keyFeatures": "Principais Funcionalidades",
       "details": [
         {
           "title": "Sistema ERP Empresarial",
@@ -53,7 +54,7 @@
           ]
         },
         {
-          "title": "E-commerce Microservices Platform",
+          "title": "Plataforma E-commerce com Microserviços",
           "description": "Solução de e-commerce moderna construída com arquitetura de microserviços usando C#, Next.js e vários bancos de dados.",
           "features": [
             "Arquitetura de microserviços",
@@ -64,7 +65,7 @@
           ]
         },
         {
-          "title": "Automatic Payroll System",
+          "title": "Sistema de Folha de Pagamento Automatizado",
           "description": "Sistema abrangente de gestão de folha de pagamento com manipulação de eventos variáveis para cálculos e relatórios complexos de salários.",
           "features": [
             "Processamento de eventos variáveis",
