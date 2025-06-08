@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "language": {
+    "pt": "Português",
+    "en": "English"
+  },
+  "buttons": {
+    "hireMe": "Hire Me",
+    "viewMyWork": "View My Work",
+    "downloadCV": "Download CV",
+    "sendMessage": "Send Message"
+  },
+  "hero": {
+    "role": "Fullstack Developer",
+    "greeting": "Hi, I'm",
+    "yearsExperience": "Years Experience",
+    "description": "Fullstack developer specialized in C#, .NET, React, and modern web technologies. Building scalable applications from microservices to complete business solutions."
+  },
+  "sections": {
+    "about": {
+      "title": "About Me",
+      "subtitle": "Passionate fullstack developer with expertise in modern technologies and enterprise solutions",
+      "description_1": "I'm a dedicated fullstack developer with over 5 years of experience building robust, scalable applications. My expertise spans across backend technologies like C#, .NET, and Entity Framework, to frontend frameworks like React and Next.js.",
+      "description_2": "I thrive on solving complex problems and delivering high-quality software solutions. My approach combines technical proficiency with a keen understanding of business needs, ensuring that the applications I build not only function well but also drive value for users.",
+      "Architecture": "Architecture"
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "subtitle": "Proficient in modern technologies and frameworks for fullstack development",
+      "backend": "Backend Development",
+      "frontend": "Frontend Development",
+      "databases": "Database & DevOps"
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "subtitle": "Showcasing my expertise in building scalable enterprise applications",
+      "technologiesUsed": "Technologies Used",
+      "details": [
+        {
+          "title": "Enterprise ERP System",
+          "description": "Complete business management system integrating all company departments with .NET Framework, Windows Forms, and PostgreSQL.",
+          "features": [
+            "Integration of all departments",
+            "Financial management",
+            "Inventory control",
+            "Human resources management",
+            "Reporting system"
+          ]
+        },
+        {
+          "title": "E-commerce Microservices Platform",
+          "description": "Modern e-commerce solution built with microservices architecture using C#, Next.js, and multiple databases.",
+          "features": [
+            "Microservices architecture",
+            "Real-time search with Typesense",
+            "Payment integration",
+            "Inventory management",
+            "Admin dashboard"
+          ]
+        },
+        {
+          "title": "Automatic Payroll System",
+          "description": "Comprehensive payroll management system with variable events handling for complex salary calculations and reporting.",
+          "features": [
+            "Variable events processing",
+            "Automated calculations",
+            "Tax compliance",
+            "Report generation",
+            "Employee management"
+          ]
+        },
+        {
+          "title": "Single Sign On Solution",
+          "description": "Single Sign-On (SSO) solution for seamless authentication across multiple applications.",
+          "features": [
+            "Centralized authentication",
+            "Multi-application support",
+            "User role management",
+            "Session management",
+            "Security protocols"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "subtitle": "Ready to work together? Let's discuss your next project",
+      "description": "I'm always open to new opportunities and collaborations. Whether you have a project in mind or just want to say hello, feel free to reach out!",
+      "letsConnect": "Let's Connect",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "subject": "Subject",
+      "message": "Message",
+      "FirstName": "First Name",
+      "LastName": "Last Name",
+      "Subject": "Subject",
+      "Message": "Message",
+      "sendMessage": "Send Message",
+      "projectInquiry": "Project Discussion",
+      "tellMeAboutYourProject": "Tell me about your project"
+    }
+  },
+  "misc": {
+    "codingWorkspaceAlt": "Coding workspace",
+    "footerRole": "Fullstack Developer"
+  }
+}

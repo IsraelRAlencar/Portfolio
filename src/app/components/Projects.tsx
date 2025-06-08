@@ -1,65 +1,67 @@
 import React from 'react'
 import { Button } from './ui/Button';
 import { ExternalLink, Github, Database, Server, Globe } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 export default function Projects() {
+    const t = useTranslations('sections.projects');
     const projects = [
         {
-        title: "Enterprise ERP System",
-        description: "Complete business management system integrating all company departments with .NET Framework, Windows Forms, and PostgreSQL.",
+        title: t('details.0.title'),
+        description: t('details.0.description'),
         image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
         technologies: ["C#", ".NET Framework", "Windows Forms", "PostgreSQL", "Entity Framework"],
         features: [
-            "Complete business integration",
-            "Financial management",
-            "Inventory control",
-            "HR management",
-            "Reporting system"
+            t('details.0.features.0'),
+            t('details.0.features.1'),
+            t('details.0.features.2'),
+            t('details.0.features.3'),
+            t('details.0.features.4')
         ],
         githubUrl: "",
         liveUrl: ""
         },
         {
-        title: "E-commerce Microservices Platform",
-        description: "Modern e-commerce solution built with microservices architecture using C#, Next.js, and multiple databases.",
+        title: t('details.1.title'),
+        description: t('details.1.description'),
         image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
         technologies: ["C#", "Entity Framework", "Next.js", "Tailwind CSS", "PostgreSQL", "MongoDB", "Typesense"],
         features: [
-            "Microservices architecture",
-            "Real-time search with Typesense",
-            "Payment integration",
-            "Inventory management",
-            "Admin dashboard"
+          t('details.1.features.0'),
+          t('details.1.features.1'),
+          t('details.1.features.2'),
+          t('details.1.features.3'),
+          t('details.1.features.4')
         ],
         githubUrl: "",
         liveUrl: ""
         },
         {
-        title: "Automatic Payroll System",
-        description: "Comprehensive payroll management system with variable events handling for complex salary calculations and reporting.",
+        title: t('details.2.title'),
+        description: t('details.2.description'),
         image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
         technologies: ["C#", ".NET Framework", "Windows Forms", "PostgreSQL", "Crystal Reports"],
         features: [
-            "Variable events processing",
-            "Automated calculations",
-            "Tax compliance",
-            "Report generation",
-            "Employee management"
+            t('details.2.features.0'),
+            t('details.2.features.1'),
+            t('details.2.features.2'),
+            t('details.2.features.3'),
+            t('details.2.features.4')
         ],
         githubUrl: "",
         liveUrl: ""
         },
         {
-        title: "Single Sign On Solution",
-        description: "Centralized authentication system enabling secure access across multiple applications with unified user management.",
+        title: t('details.3.title'),
+        description: t('details.3.description'),
         image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3",
         technologies: ["C#", "Entity Framework", "Razor Pages", "SQL Server", "OAuth 2.0"],
         features: [
-            "Centralized authentication",
-            "Multi-application support",
-            "User role management",
-            "Session management",
-            "Security protocols"
+            t('details.3.features.0'),
+            t('details.3.features.1'),
+            t('details.3.features.2'),
+            t('details.3.features.3'),
+            t('details.3.features.4')
         ],
         githubUrl: "",
         liveUrl: ""
@@ -70,9 +72,9 @@ export default function Projects() {
         <section className="py-20 px-4">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-foreground">Featured Projects</h2>
+          <h2 className="text-4xl font-bold mb-4 text-foreground">{t('title')}</h2>
           <p className="text-muted-foreground">
-            Showcasing my expertise in building scalable enterprise applications
+            {t('subtitle')}
           </p>
         </div>
 
@@ -101,7 +103,7 @@ export default function Projects() {
                 </div>
 
                 <div className="space-y-4">
-                  <h4 className="text-lg font-semibold text-primary">Technologies Used:</h4>
+                  <h4 className="text-lg font-semibold text-primary">{t('technologiesUsed')}</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
                       <span 

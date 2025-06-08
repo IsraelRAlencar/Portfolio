@@ -1,9 +1,10 @@
 'use client'
 
 import Link from 'next/link';
-import React from 'react'
+import React, { use } from 'react'
 import ThemeToggle from './ThemeToggle';
 import { Button } from './ui/Button';
+import { useTranslations } from 'next-intl';
 
 export default function Navbar() {
   const scrollToSection = (sectionId: string) => {
@@ -13,6 +14,7 @@ export default function Navbar() {
     }
   };
 
+  const t = useTranslations();
     
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass-nav">
@@ -25,25 +27,25 @@ export default function Navbar() {
             onClick={() => scrollToSection('about')}
             className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
           >
-            About
+            {t('nav.about')}
           </button>
           <button 
             onClick={() => scrollToSection('skills')}
             className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
           >
-            Skills
+            {t('nav.skills')}
           </button>
           <button 
             onClick={() => scrollToSection('projects')}
             className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
           >
-            Projects
+            {t('nav.projects')}
           </button>
           <button 
             onClick={() => scrollToSection('contact')}
             className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
           >
-            Contact
+            {t('nav.contact')}
           </button>
         </div>
         <div className="flex items-center gap-4">
@@ -52,7 +54,7 @@ export default function Navbar() {
             onClick={() => scrollToSection('contact')}
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
           >
-            Hire Me
+            {t('buttons.hireMe')}
           </Button>
         </div>
       </div>

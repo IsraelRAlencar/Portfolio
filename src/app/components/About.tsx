@@ -1,27 +1,27 @@
 import React from 'react'
 import { Code, Database, Server, Globe } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 export default function About() {
+  const t = useTranslations('sections.about');
+
   return (
     <section className="py-20 px-4">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-foreground">About Me</h2>
+          <h2 className="text-4xl font-bold mb-4 text-foreground">{t('title')}</h2>
           <p className="text-muted-foreground">
-            Passionate fullstack developer with expertise in modern technologies and enterprise solutions
+            {t('subtitle')}
           </p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-foreground leading-relaxed">
-              I'm a dedicated fullstack developer with over 5 years of experience building robust, 
-              scalable applications. My expertise spans across backend technologies like C#, .NET, 
-              and Entity Framework, to frontend frameworks like React and Next.js.
+              {t('description_1')}
             </p>
             <p className="text-foreground leading-relaxed">
-              I have a passion for creating efficient solutions that solve real business problems, 
-              from complete ERP systems to modern e-commerce platforms using microservices architecture.
+              {t('description_2')}
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-card p-4 rounded-lg border border-border">
@@ -41,7 +41,7 @@ export default function About() {
               </div>
               <div className="bg-card p-4 rounded-lg border border-border">
                 <Globe className="w-8 h-8 text-primary mb-2" />
-                <h3 className="font-semibold mb-1">Architecture</h3>
+                <h3 className="font-semibold mb-1">{t('Architecture')}</h3>
                 <p className="text-muted-foreground text-sm">Microservices, REST APIs</p>
               </div>
             </div>

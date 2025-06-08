@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "skills": "Competências",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "language": {
+    "pt": "Português",
+    "en": "English"
+  },
+  "buttons": {
+    "hireMe": "Contrate-me",
+    "viewMyWork": "Ver Meu Trabalho",
+    "downloadCV": "Baixar CV",
+    "sendMessage": "Enviar Mensagem"
+  },
+  "hero": {
+    "role": "Desenvolvedor Fullstack",
+    "greeting": "Olá, eu sou",
+    "yearsExperience": "Anos de Experiência",
+    "description": "Desenvolvedor fullstack especializado em C#, .NET, React e tecnologias web modernas. Constrói aplicações escaláveis desde microserviços até soluções completas de negócios."
+  },
+  "sections": {
+    "about": {
+      "title": "Sobre Mim",
+      "subtitle": "Desenvolvedor fullstack apaixonado com experiência em tecnologias modernas e soluções empresariais",
+      "description_1": "Sou um desenvolvedor fullstack dedicado com mais de 5 anos de experiência na construção de aplicações robustas e escaláveis. Minha experiência abrange tecnologias de backend como C#, .NET e Entity Framework, até frameworks de frontend como React e Next.js.",
+      "description_2": "Eu prospero na resolução de problemas complexos e na entrega de soluções de software de alta qualidade. Minha abordagem combina proficiência técnica com uma compreensão aguçada das necessidades empresariais, garantindo que as aplicações que construo não apenas funcionem bem, mas também gerem valor para os usuários.",
+      "Architecture": "Arquitetura de Software"
+    },
+    "skills": {
+      "title": "Competências Técnicas",
+      "subtitle": "Proficiência em tecnologias e frameworks modernos para desenvolvimento fullstack",
+      "backend": "Desenvolvimento Backend",
+      "frontend": "Desenvolvimento Frontend",
+      "databases": "Banco de Dados & DevOps"
+    },
+    "projects": {
+      "title": "Projetos em Destaque",
+      "subtitle": "Exibindo minha experiência na construção de aplicações empresariais escaláveis",
+      "technologiesUsed": "Tecnologias Utilizadas",
+      "details": [
+        {
+          "title": "Sistema ERP Empresarial",
+          "description": "Sistema completo de gestão empresarial integrando todos os departamentos da empresa com .NET Framework, Windows Forms e PostgreSQL.",
+          "features": [
+            "Integração de todos os departamentos",
+            "Gestão financeira",
+            "Controle de estoque",
+            "Gestão de recursos humanos",
+            "Sistema de relatórios"
+          ]
+        },
+        {
+          "title": "E-commerce Microservices Platform",
+          "description": "Solução de e-commerce moderna construída com arquitetura de microserviços usando C#, Next.js e vários bancos de dados.",
+          "features": [
+            "Arquitetura de microserviços",
+            "Busca em tempo real com Typesense",
+            "Integração de pagamentos",
+            "Gestão de inventário",
+            "Painel de administração"
+          ]
+        },
+        {
+          "title": "Automatic Payroll System",
+          "description": "Sistema abrangente de gestão de folha de pagamento com manipulação de eventos variáveis para cálculos e relatórios complexos de salários.",
+          "features": [
+            "Processamento de eventos variáveis",
+            "Cálculos automatizados",
+            "Conformidade fiscal",
+            "Geração de relatórios",
+            "Gestão de funcionários"
+          ]
+        },
+        {
+          "title": "Solução Single Sign On",
+          "description": "Solução de Single Sign-On (SSO) para autenticação perfeita em várias aplicações.",
+          "features": [
+            "Autenticação centralizada",
+            "Suporte a múltiplas aplicações",
+            "Gestão de papéis de usuário",
+            "Gestão de sessões",
+            "Protocolos de segurança"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "Entre em Contato",
+      "subtitle": "Pronto para trabalharmos juntos? Vamos discutir seu próximo projeto",
+      "description": "Estou sempre aberto a novas oportunidades e colaborações. Se você tem um projeto em mente ou apenas quer conversar sobre tecnologia, sinta-se à vontade para entrar em contato.",
+      "letsConnect": "Vamos nos Conectar",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "location": "Localização",
+      "firstName": "Nome",
+      "lastName": "Sobrenome",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "FirstName": "Nome",
+      "LastName": "Sobrenome",
+      "Subject": "Assunto",
+      "Message": "Mensagem",
+      "sendMessage": "Enviar Mensagem",
+      "projectInquiry": "Projeto a ser tratado",
+      "tellMeAboutYourProject": "Conte-me sobre seu projeto"
+    }
+  },
+  "misc": {
+    "codingWorkspaceAlt": "Espaço de trabalho de programação",
+    "footerRole": "Desenvolvedor Fullstack"
+  }
+}

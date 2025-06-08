@@ -1,11 +1,15 @@
+import { useTranslations } from 'next-intl';
 import React from 'react'
 
 
 
 export default function Skills() {
+  
+
+  const t = useTranslations('sections.skills');
     const skillCategories = [
         {
-        title: "Backend Development",
+        title: t('backend'),
         skills: [
             { name: "C#", level: 95 },
             { name: ".NET Framework", level: 90 },
@@ -14,7 +18,7 @@ export default function Skills() {
         ]
         },
         {
-        title: "Frontend Development", 
+        title: t('frontend'),
         skills: [
             { name: "React", level: 90 },
             { name: "Next.js", level: 85 },
@@ -23,11 +27,11 @@ export default function Skills() {
         ]
         },
         {
-        title: "Database & DevOps",
+        title: t('databases'),
         skills: [
             { name: "PostgreSQL", level: 88 },
             { name: "MongoDB", level: 82 },
-            { name: "SQL", level: 90 },
+            { name: "Typesense", level: 90 },
             { name: "Microservices", level: 85 },
         ]
         }
@@ -37,9 +41,9 @@ export default function Skills() {
      <section className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-foreground">Technical Skills</h2>
+          <h2 className="text-4xl font-bold mb-4 text-foreground">{t('title')}</h2>
           <p className="text-muted-foreground">
-            Proficient in modern technologies and frameworks for fullstack development
+            {t('subtitle')}
           </p>
         </div>
         

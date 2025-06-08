@@ -13,6 +13,11 @@ export default function Footer() {
             <h3 className="text-xl font-bold text-foreground mb-2">Israel Alencar</h3>
             <p className="text-muted-foreground">Fullstack Developer</p>
           </div>
+
+          
+          <p className="text-muted-foreground flex items-center justify-center gap-1">
+            Israel Alencar &copy; {new Date().getFullYear()}
+          </p>
           
           <div className="flex items-center gap-6">
             <a 
@@ -38,12 +43,6 @@ export default function Footer() {
               <Mail className="w-6 h-6" />
             </a>
           </div>
-        </div>
-        
-        <div className="border-t border-border mt-8 pt-8 text-center">
-          <p className="text-muted-foreground flex items-center justify-center gap-1">
-            Israel Alencar &copy; {new Date().getFullYear()}
-          </p>
         </div>
       </div>
     </footer>
