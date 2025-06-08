@@ -5,6 +5,7 @@ import React, { use } from 'react'
 import ThemeToggle from './ThemeToggle';
 import { Button } from './ui/Button';
 import { useTranslations } from 'next-intl';
+import LocaleToggle from './LocaleToggle';
 
 export default function Navbar() {
   const scrollToSection = (sectionId: string) => {
@@ -49,6 +50,7 @@ export default function Navbar() {
           </button>
         </div>
         <div className="flex items-center gap-4">
+          <LocaleToggle />
           <ThemeToggle />
           <Button 
             onClick={() => scrollToSection('contact')}
