@@ -8,6 +8,13 @@ export default function Hero() {
   const siteInfo = useSiteInfo();
   const t = useTranslations();
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="pt-32 pb-20 px-4">
       <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
@@ -26,7 +33,7 @@ export default function Hero() {
             {t('hero.description')}
           </p>
           <div className="flex items-center gap-4 flex-wrap">
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8 py-6 text-lg">
+            <Button onClick={() => scrollToSection('projects')} className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8 py-6 text-lg">
               {t('buttons.viewMyWork')} <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button variant="outline" className="border-border text-muted-foreground hover:bg-accent">

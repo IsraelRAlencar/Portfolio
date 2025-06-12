@@ -85,6 +85,17 @@
             "Session management",
             "Security protocols"
           ]
+        },
+        {
+          "title": "Landing Pages",
+          "description": "Landing page solutions for targeted marketing and user engagement.",
+          "features": [
+            "Customizable templates",
+            "A/B testing",
+            "Analytics integration",
+            "Lead generation forms",
+            "Responsive design"
+          ]
         }
       ]
     },
@@ -95,6 +106,7 @@
       "letsConnect": "Let's Connect",
       "email": "Email",
       "phone": "Phone",
+      "phonePlaceholder": "+1 123 456 7890",
       "location": "Location",
       "firstName": "First Name",
       "lastName": "Last Name",
@@ -105,8 +117,13 @@
       "Subject": "Subject",
       "Message": "Message",
       "sendMessage": "Send Message",
+      "sendingMessage": "Sending message...",
       "projectInquiry": "Project Discussion",
-      "tellMeAboutYourProject": "Tell me about your project"
+      "tellMeAboutYourProject": "Tell me about your project",
+      "messageSent": "Message sent successfully!",
+      "messageError": "Error sending message. Please try again later.",
+      "messageErrorTitle": "Error sending message. ❌",
+      "messageSuccessTitle": "Message sent successfully! ✅"
     }
   },
   "misc": {

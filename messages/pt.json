@@ -85,6 +85,17 @@
             "Gestão de sessões",
             "Protocolos de segurança"
           ]
+        },
+        {
+          "title": "Landing Pages",
+          "description": "Soluções de landing page para marketing direcionado e engajamento do usuário.",
+          "features": [
+            "Templates personalizáveis",
+            "Teste A/B",
+            "Integração de análises",
+            "Formulários de geração de leads",
+            "Design responsivo"
+          ]
         }
       ]
     },
@@ -95,6 +106,7 @@
       "letsConnect": "Vamos nos Conectar",
       "email": "E-mail",
       "phone": "Telefone",
+      "phonePlaceholder": "+55 11 99999-9999",
       "location": "Localização",
       "firstName": "Nome",
       "lastName": "Sobrenome",
@@ -105,8 +117,13 @@
       "Subject": "Assunto",
       "Message": "Mensagem",
       "sendMessage": "Enviar Mensagem",
+      "sendingMessage": "Enviando mensagem...",
       "projectInquiry": "Projeto a ser tratado",
-      "tellMeAboutYourProject": "Conte-me sobre seu projeto"
+      "tellMeAboutYourProject": "Conte-me sobre seu projeto",
+      "messageSent": "Mensagem enviada com sucesso!",
+      "messageError": "Erro ao enviar mensagem. Por favor, entre em contato por outro canal.",
+      "messageErrorTitle": "Erro ao enviar mensagem. ❌",
+      "messageSuccessTitle": "Mensagem enviada com sucesso! ✅"
     }
   },
   "misc": {

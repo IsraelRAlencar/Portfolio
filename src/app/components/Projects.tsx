@@ -66,6 +66,21 @@ export default function Projects() {
         githubUrl: "",
         liveUrl: ""
         },
+        {
+        title: t('details.4.title'),
+        description: t('details.4.description'),
+        image: "https://solucao.digital/wp-content/uploads/2023/04/lp-image-1.png.webp",
+        technologies: ["Next.js", "Javascript", "Tailwind CSS", "Resend", "Typescript"],
+        features: [
+            t('details.4.features.0'),
+            t('details.4.features.1'),
+            t('details.4.features.2'),
+            t('details.4.features.3'),
+            t('details.4.features.4')
+        ],
+        githubUrl: "",
+        liveUrl: ""
+        },
     ];
 
   return (
