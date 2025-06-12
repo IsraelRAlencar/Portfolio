@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
 export default function Hero() {
   const siteInfo = useSiteInfo();
   const t = useTranslations();
+  const path = t('hero.role') == "Fullstack Developer" ? "/docs/Curriculum Vitae Israel Alencar EN.pdf" : "/docs/Curriculum Vitae Israel Alencar PT.pdf";
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -14,6 +15,16 @@ export default function Hero() {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+    const handleDownload = () => {
+      const link = document.createElement('a');
+      link.href = path;
+      const fileName = path.split('/').pop() || 'curriculo.pdf';
+      link.setAttribute('download', fileName);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
 
   return (
     <section className="pt-32 pb-20 px-4">
@@ -36,7 +47,7 @@ export default function Hero() {
             <Button onClick={() => scrollToSection('projects')} className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8 py-6 text-lg">
               {t('buttons.viewMyWork')} <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" className="border-border text-muted-foreground hover:bg-accent">
+            <Button onClick={handleDownload} variant="outline" className="border-border text-muted-foreground hover:bg-accent">
               <Download className="mr-2 h-4 w-4" />
               {t('buttons.downloadCV')}
             </Button>
