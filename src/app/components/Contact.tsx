@@ -80,7 +80,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div onClick={() => window.open(`https://www.linkedin.com/in/${siteInfo.linkedin}`, '_blank')} className="hover:cursor-pointer flex items-center gap-4">
+              <div onClick={() => window.open(siteInfo.linkedin, '_blank')} className="hover:cursor-pointer flex items-center gap-4">
                 <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center">
                   <Linkedin className="w-6 h-6 text-primary" />
                 </div>
@@ -90,7 +90,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div onClick={() => window.open(`https://github.com/${siteInfo.github}`, '_blank')} className="hover:cursor-pointer flex items-center gap-4">
+              <div onClick={() => window.open(siteInfo.github, '_blank')} className="hover:cursor-pointer flex items-center gap-4">
                 <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center">
                   <Github className="w-6 h-6 text-primary" />
                 </div>
