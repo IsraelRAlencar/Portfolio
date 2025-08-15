@@ -25,11 +25,6 @@ export default function About() {
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-card p-4 rounded-lg border border-border">
-                <Code className="w-8 h-8 text-primary mb-2" />
-                <h3 className="font-semibold mb-1">Frontend</h3>
-                <p className="text-muted-foreground text-sm">React, Next.js, JavaScript, TypeScript</p>
-              </div>
-              <div className="bg-card p-4 rounded-lg border border-border">
                 <Server className="w-8 h-8 text-primary mb-2" />
                 <h3 className="font-semibold mb-1">Backend</h3>
                 <p className="text-muted-foreground text-sm">C#, .NET, Entity Framework</p>
@@ -43,6 +38,11 @@ export default function About() {
                 <Globe className="w-8 h-8 text-primary mb-2" />
                 <h3 className="font-semibold mb-1">{t('Architecture')}</h3>
                 <p className="text-muted-foreground text-sm">Microservices, REST APIs</p>
+              </div>
+              <div className="bg-card p-4 rounded-lg border border-border">
+                <Code className="w-8 h-8 text-primary mb-2" />
+                <h3 className="font-semibold mb-1">Frontend</h3>
+                <p className="text-muted-foreground text-sm">React, Next.js, JavaScript, TypeScript</p>
               </div>
             </div>
           </div>

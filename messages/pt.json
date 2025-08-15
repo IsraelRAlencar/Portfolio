@@ -16,16 +16,16 @@
     "sendMessage": "Enviar Mensagem"
   },
   "hero": {
-    "role": "Desenvolvedor Fullstack",
+    "role": "Desenvolvedor Backend",
     "greeting": "Olá, eu sou",
     "yearsExperience": "Anos de Experiência",
-    "description": "Desenvolvedor fullstack especializado em C#, .NET, React e tecnologias web modernas. Constrói aplicações escaláveis desde microserviços até soluções completas de negócios."
+    "description": "Desenvolvedor Backend especializado em C#, .NET, PostgreSQL e tecnologias web modernas. Constrói aplicações escaláveis desde microserviços até soluções completas de negócios."
   },
   "sections": {
     "about": {
       "title": "Sobre Mim",
-      "subtitle": "Desenvolvedor fullstack apaixonado com experiência em tecnologias modernas e soluções empresariais",
-      "description_1": "Sou um desenvolvedor fullstack dedicado com mais de 5 anos de experiência na construção de aplicações robustas e escaláveis. Minha experiência abrange tecnologias de backend como C#, .NET e Entity Framework, até frameworks de frontend como React e Next.js.",
+      "subtitle": "Desenvolvedor backend apaixonado com experiência em tecnologias modernas e soluções empresariais",
+      "description_1": "Sou um desenvolvedor backend dedicado com mais de 5 anos de experiência na construção de aplicações robustas e escaláveis. Minha experiência abrange tecnologias de backend como C#, .NET e Entity Framework, até frameworks de frontend como React e Next.js.",
       "description_2": "Eu prospero na resolução de problemas complexos e na entrega de soluções de software de alta qualidade. Minha abordagem combina proficiência técnica com uma compreensão aguçada das necessidades empresariais, garantindo que as aplicações que construo não apenas funcionem bem, mas também gerem valor para os usuários.",
       "Architecture": "Arquitetura de Software"
     },

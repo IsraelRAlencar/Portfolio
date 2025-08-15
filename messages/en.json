@@ -16,16 +16,16 @@
     "sendMessage": "Send Message"
   },
   "hero": {
-    "role": "Fullstack Developer",
+    "role": "Backend Developer",
     "greeting": "Hi, I'm",
     "yearsExperience": "Years Experience",
-    "description": "Fullstack developer specialized in C#, .NET, React, and modern web technologies. Building scalable applications from microservices to complete business solutions."
+    "description": "Backend developer specialized in C#, .NET, PostgreSQL, and modern web technologies. Building scalable applications from microservices to complete business solutions."
   },
   "sections": {
     "about": {
       "title": "About Me",
-      "subtitle": "Passionate fullstack developer with expertise in modern technologies and enterprise solutions",
-      "description_1": "I'm a dedicated fullstack developer with over 5 years of experience building robust, scalable applications. My expertise spans across backend technologies like C#, .NET, and Entity Framework, to frontend frameworks like React and Next.js.",
+      "subtitle": "Passionate backend developer with expertise in modern technologies and enterprise solutions",
+      "description_1": "I'm a dedicated backend developer with over 5 years of experience building robust, scalable applications. My expertise spans across backend technologies like C#, .NET, and Entity Framework, to frontend frameworks like React and Next.js.",
       "description_2": "I thrive on solving complex problems and delivering high-quality software solutions. My approach combines technical proficiency with a keen understanding of business needs, ensuring that the applications I build not only function well but also drive value for users.",
       "Architecture": "Architecture"
     },
@@ -128,6 +128,6 @@
   },
   "misc": {
     "codingWorkspaceAlt": "Coding workspace",
-    "footerRole": "Fullstack Developer"
+    "footerRole": "Backend Developer"
   }
 }

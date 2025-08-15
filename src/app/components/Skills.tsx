@@ -17,15 +17,7 @@ export default function Skills() {
             { name: "ASP.NET Core", level: 88 },
         ]
         },
-        {
-        title: t('frontend'),
-        skills: [
-            { name: "React", level: 90 },
-            { name: "Next.js", level: 85 },
-            { name: "JavaScript", level: 92 },
-            { name: "TypeScript", level: 80 },
-        ]
-        },
+        
         {
         title: t('databases'),
         skills: [
@@ -33,6 +25,15 @@ export default function Skills() {
             { name: "MongoDB", level: 82 },
             { name: "Typesense", level: 90 },
             { name: "Microservices", level: 85 },
+        ]
+        },
+        {
+        title: t('frontend'),
+        skills: [
+            { name: "React", level: 90 },
+            { name: "Next.js", level: 85 },
+            { name: "JavaScript", level: 92 },
+            { name: "TypeScript", level: 80 },
         ]
         }
     ];
