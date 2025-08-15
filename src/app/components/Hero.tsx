@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 export default function Hero() {
   const siteInfo = useSiteInfo();
   const t = useTranslations();
-  const path = t('hero.role') == "Fullstack Developer" ? "/docs/Curriculum Vitae Israel Alencar EN.pdf" : "/docs/Curriculum Vitae Israel Alencar PT.pdf";
+  const path = t('hero.role') == "Backend Developer" ? "/docs/Curriculum Vitae Israel Alencar EN.pdf" : "/docs/Curriculum Vitae Israel Alencar PT.pdf";
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
